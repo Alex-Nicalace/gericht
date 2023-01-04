@@ -1,0 +1,49 @@
+.blogs-page {
+   &__offer {
+      @include adaptiveValue("padding-top", 122, 70);
+   }
+   // .blogs-page__body
+   &__body {
+   }
+   &__container {
+      position: relative;
+   }
+   &__wrapper {
+      position: relative;
+      padding-top: percent(150, 1300);
+      padding-bottom: percent(150, 1300);
+
+      @media (min-width: $mobile) {
+         display: grid;
+         grid-template-columns: 1fr minmax(rem(218), percent(375, 1300));
+         // grid-template-columns: 1fr rem(375);
+         column-gap: percent(69, 1300);
+      }
+      &[data-decor] {
+         &::before {
+            position: absolute;
+            right: rem(-200);
+            top: 55%;
+            @media (max-width: $pc) {
+               display: none;
+            }
+         }
+      }
+   }
+   // .blogs-page__content
+   &__content {
+      & > *:not(:last-child) {
+         margin-bottom: percent(64, 856);
+      }
+   }
+   // .blogs-page__items
+   &__items {
+   }
+   // .blogs-page__button
+   &__button {
+      text-align: center;
+   }
+   // .blogs-page__sidebar
+   &__sidebar {
+   }
+}

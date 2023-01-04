@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"About us"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="about-us">
+         @@include('html/blocks/_offer.htm',{
+         "class": "about-us__offer",
+         "page": "About Us",
+         "header": "Welcome to Gerícht"
+         })
+         <div class="about-us__body wave-bg wave-bg_lowered">
+            <section class="about-us__history history">
+               <div class="history__container">
+                  <div class="history__header block-header">
+                     <div class="block-header__sub-title">Our History</div>
+                     <h2 class="block-header__title">serving customers for over a decade</h2>
+                  </div>
+                  <div class="history__body-history body-history">
+                     <div class="body-history__left">
+                        <div class="body-history__text">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices
+                           vulputate posuere tristique.
+                           In sed odio nec aliquet eu proin mauris et.
+                        </div>
+                        <div class="body-history__img-l">
+                           <div class="body-history__image-ibg"><img data-src="@img/about-us/history/left.jpg"
+                                 alt="image">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="body-history__right">
+                        <div class="body-history__img-r">
+                           <div class="body-history__image-ibg"><img data-src="@img/about-us/history/right.jpg"
+                                 alt="image">
+                           </div>
+                        </div>
+                        <div class="body-history__counter counter-history">
+                           <h3 class="counter-history__header">
+                              Over the years
+                           </h3>
+                           <div class="counter-history__items">
+                              <div class="counter-history__item">
+                                 <div class="block">
+                                    <div class="block__top">30+</div>
+                                    <div class="block__bottom">Breakfast Options</div>
+                                 </div>
+                              </div>
+                              <div class="counter-history__item">
+                                 <div class="block">
+                                    <div class="block__top">50+</div>
+                                    <div class="block__bottom">Dinner Options</div>
+                                 </div>
+                              </div>
+                              <div class="counter-history__item">
+                                 <div class="block">
+                                    <div class="block__top">8</div>
+                                    <div class="block__bottom">New Locations</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="about-us__video video-about">
+               <div data-decor data-decor-second class="video-about__container">
+                  <div class="video-about__header block-header">
+                     <div class="block-header__sub-title">About Us</div>
+                     <h2 class="block-header__title">Happy Hours with Us</h2>
+                  </div>
+                  <div class="video-about__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices
+                     vulputate posuere tristique.
+                     In sed odio nec aliquet eu proin mauris et.
+                  </div>
+                  <div data-watch="video" class="video-about__video-module">
+                     <video src="files/videoplayback.mp4" poster="@img/video/poster.jpg"></video>
+                  </div>
+               </div>
+            </section>
+            @@include('html/blocks/_chefs.htm',{
+            "class": "about-us__chef",
+            "attribute": ""
+            })
+            @@include('html/blocks/_testimony.htm',{
+            "class": "about-us__testimony",
+            "attribute": ""
+            })
+            @@include('html/blocks/_gallary.htm',{
+            "class": "about-us__gallary",
+            "attribute": ""
+            })
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

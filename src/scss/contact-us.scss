@@ -1,0 +1,102 @@
+.contact-us {
+   &__offer {
+      @include adaptiveValue("padding-top", 122, 70);
+   }
+   // .contact-us__map
+   &__map {
+   }
+   // .contact-us__subscription
+   &__subscription {
+   }
+}
+// <map>
+.map {
+   @include adaptiveValue("padding-top", 152, 30);
+   @include adaptiveValue("padding-bottom", 152, 30);
+   // .map__container
+   &__container {
+      position: relative;
+      &::before {
+         position: absolute;
+         bottom: rem(-80);
+         right: rem(-160);
+         @media (max-width: $pc) {
+            display: none;
+         }
+      }
+   }
+   &__wrapper {
+      padding-top: 80%;
+      @media (min-width: $tablet) {
+         padding-top: percent(500, 1300);
+      }
+      position: relative;
+      border: 2px solid $colorBorderButton;
+   }
+   // .map__google-map
+   &__google-map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      filter: invert(90%);
+      // filter: grayscale(100%);
+      // filter: grayscale(1);
+   }
+}
+// </map>
+
+// <subscription>
+.subscription {
+   @include adaptiveValue("padding-top", 152, 30);
+   @include adaptiveValue("padding-bottom", 152, 30);
+   // .subscription__container
+   &__container {
+      position: relative;
+      z-index: 2;
+
+      display: grid;
+      row-gap: rem(32);
+      @media (min-width: $tablet) {
+         grid-template-columns: percent(635, 1300) 1fr;
+         // @include adaptiveValue("column-gap", 111, 50);
+         column-gap: percent(111, 1300);
+         align-items: center;
+      }
+   }
+   // .subscription__form
+   &__form {
+   }
+   // .subscription__image
+   &__image {
+      @media (max-width: $tablet) {
+         grid-row-start: 1;
+      }
+   }
+}
+.form-subscription {
+   & > *:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 32, 10);
+   }
+   // .form-subscription__name
+   &__name {
+   }
+   // .form-subscription__email
+   &__email {
+   }
+   // .form-subscription__massage
+   &__massage {
+      height: rem(140);
+      textarea {
+         height: 100%;
+      }
+   }
+   // .form-subscription__button
+   &__button {
+      @media (max-width: $tablet) {
+         text-align: center;
+      }
+   }
+}
+// </subscription>

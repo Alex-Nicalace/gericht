@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Gerícht"
+})
+
+<body>
+   <div class="wrapper wave-bg wave-bg_lifted" data-bg>
+      @@include('html/_header.htm',{})
+      <main class="page-404">
+         <div class="page-404__container">
+            <div class="page-404__image">
+               <div class="page-404__image-ibg"><img data-src="@img/common/404.svg" alt="404"></div>
+            </div>
+            <p class="page-404__text">
+               Oops! The page you are looking for does not exist. It might have been moved or deleted.
+            </p>
+            <div class="page-404__button">
+               <a href="restaurant-home.html" class="button">Back To Home</a>
+            </div>
+         </div>
+      </main>
+      <footer data-decor class="footer footer_simple">
+         <div class="footer__rights">2021 Gerícht. All Rights reserved.</div>
+      </footer>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

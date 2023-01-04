@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Faq"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="faq">
+         @@include('html/blocks/_offer.htm',{
+         "class": "faq__offer",
+         "page": "FAQ",
+         "header": "Frequently Asked Questions"
+         })
+         <div class="faq__body wave-bg wave-bg_lowered">
+            <section class="faq__questions questions">
+               <div class="questions__container">
+                  @@include('html/blocks/_frame.htm',{
+                  "class": "questions__image"
+                  })
+                  <ul class="questions__list">
+                     <li class="questions__item">
+                        <details class="question-block">
+                           <summary class="question-block__question">How do i reach to the restaurant?</summary>
+                           <p class="question-block__answer">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                              do amet sint. Velit officia
+                              consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </details>
+                     </li>
+                     <li class="questions__item">
+                        <details class="question-block">
+                           <summary class="question-block__question">Is there a reservation required?</summary>
+                           <p class="question-block__answer">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                              do amet sint. Velit officia consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </details>
+                     </li>
+                     <li class="questions__item">
+                        <details class="question-block">
+                           <summary class="question-block__question">Can i host an event at The restaurant?</summary>
+                           <p class="question-block__answer">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                              do amet sint. Velit officia
+                              consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </details>
+                     </li>
+                     <li class="questions__item">
+                        <details class="question-block">
+                           <summary class="question-block__question">Is valet parking available at the restaurant?
+                           </summary>
+                           <p class="question-block__answer">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                              do amet sint. Velit officia
+                              consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </details>
+                     </li>
+                     <li class="questions__item">
+                        <details class="question-block">
+                           <summary class="question-block__question">When are the happy hours of your bar?</summary>
+                           <p class="question-block__answer">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                              do amet sint. Velit officia
+                              consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </details>
+                     </li>
+                     <li class="questions__item">
+                        <details class="question-block">
+                           <summary class="question-block__question">Is seafood available at the restaurant?</summary>
+                           <p class="question-block__answer">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                              do amet sint. Velit officia
+                              consequat duis enim velit
+                              mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </details>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body_decor-right",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

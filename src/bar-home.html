@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Bar"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="bar-page">
+         <section data-bg data-fullscreen class="bar-page__bar-slider bar-slider">
+            <div class="bar-slider__container bar-slider__container_wide">
+               <div class="bar-slider__container">
+                  <nav class="bar-slider__menu menu-mainslider menu-mainslider_permanent">
+                     <a href="restaurant-home.html" class="menu-mainslider__link">#Gericht</a>
+                     <a href="bar-home.html" class="menu-mainslider__link menu-mainslider__link_selected">#Bar</a>
+                  </nav>
+                  <div class="bar-slider__body-bar-slider body-bar-slider swiper">
+                     <div class="body-bar-slider__swiper swiper-wrapper">
+                        <div class="body-bar-slider__slide slide-bar swiper-slide">
+                           <div class="slide-bar__image-ibg">
+                              <img data-src="@img/bar-page/main-screen-slider/01.jpg" alt="image">
+                           </div>
+                           <h2 class="slide-bar__header">On the Rocks</h2>
+                        </div>
+                        <div class="body-bar-slider__slide slide-bar swiper-slide">
+                           <div class="slide-bar__image-ibg">
+                              <img data-src="@img/bar-page/main-screen-slider/02.jpg" alt="image">
+                           </div>
+                           <h2 class="slide-bar__header">Lorem, ipsum dolor.</h2>
+                        </div>
+                        <div class="body-bar-slider__slide slide-bar swiper-slide">
+                           <div class="slide-bar__image-ibg">
+                              <img data-src="@img/bar-page/main-screen-slider/03.jpg" alt="image">
+                           </div>
+                           <h2 class="slide-bar__header">Lorem, ipsum dolor.</h2>
+                        </div>
+                        <div class="body-bar-slider__slide slide-bar swiper-slide">
+                           <div class="slide-bar__image-ibg">
+                              <img data-src="@img/bar-page/main-screen-slider/04.jpg" alt="image">
+                           </div>
+                           <h2 class="slide-bar__header">Lorem, ipsum dolor.</h2>
+                        </div>
+                        <div class="body-bar-slider__slide slide-bar swiper-slide">
+                           <div class="slide-bar__image-ibg">
+                              <img data-src="@img/bar-page/main-screen-slider/05.jpg" alt="image">
+                           </div>
+                           <h2 class="slide-bar__header">Lorem, ipsum dolor.</h2>
+                        </div>
+                     </div>
+                     <div
+                        class="body-bar-slider__controll bullets-pagination bullets-pagination_vertical swiper-pagination">
+                     </div>
+                  </div>
+                  <div class="bar-slider__scroll">
+                     <button type="button" class="scroll scroll_white-line">Scroll</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="bar-page__body wave-bg">
+            @@include('html/blocks/_reserv.htm',{
+            "class": "bar-page__reserv"
+            })
+            <section data-bg class="bar-page__about about-bar">
+               <div data-decor class="about-bar__container">
+                  <div class="about-bar__item img-bar-about-big">
+                     <div class="img-bar-about-big__image-ibg"><img data-src="@img/bar-page/about/left.jpg" alt="">
+                     </div>
+                  </div>
+                  <div class="about-bar__item img-bar-about-sm">
+                     <div class="img-bar-about-sm__image-ibg"><img data-src="@img/bar-page/about/right.jpg" alt="">
+                     </div>
+                  </div>
+                  <div class="about-bar__item content-about-bar">
+                     <div class="content-about-bar__header block-header block-header_left">
+                        <div class="block-header__sub-title">About Us</div>
+                        <h2 class="block-header__title">Food, Drinks, entertainment in one</h2>
+                     </div>
+                     <div class="content-about-bar__text">
+                        Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat
+                        habitasse interdum mi
+                        aliquam In sed odio nec aliquet.
+                     </div>
+                     <div class="content-about-bar__button">
+                        <a href="#" class="button">Know More</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="bar-page__poison poison">
+               <div class="poison__container">
+                  <div class="poison__header block-header">
+                     <div class="block-header__sub-title">Wide Range to choose from</div>
+                     <h2 class="block-header__title">What’s Your Poison?</h2>
+                  </div>
+                  <div class="poison__items">
+                     <div class="poison__item">
+                        <a data-tooltip="Beer" href="#" class="poison__image-ibg"><img
+                              data-src="@img/bar-page/poison/01.jpg" alt="Beer"></a>
+                     </div>
+                     <div class="poison__item">
+                        <a data-tooltip="Wine" href="#" class="poison__image-ibg"><img
+                              data-src="@img/bar-page/poison/02.jpg" alt="Wine"></a>
+                     </div>
+                     <div class="poison__item">
+                        <a data-tooltip="Cocktails" href="#" class="poison__image-ibg"><img
+                              data-src="@img/bar-page/poison/03.jpg" alt="Cocktails"></a>
+                     </div>
+                  </div>
+            </section>
+            @@include('html/blocks/_hours.htm',{
+            "class": "bar-page__hours",
+            "attribute": ""
+            })
+            @@include('html/blocks/_today.htm',{
+            "class": "bar-page__today",
+            "attribute": "data-decor"
+            })
+            <section data-bg class="bar-page__contact contact">
+               <div class="contact__container">
+                  <div class="contact__header block-header block-header_left">
+                     <div class="block-header__sub-title">Contact</div>
+                     <h2 class="block-header__title">Find Us</h2>
+                  </div>
+                  <div class="contact__data data-contact">
+                     <div class="data-contact__ho-find">
+                        Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+                     </div>
+                     <div class="data-contact__open-time open-time">
+                        <h3 class="open-time__header">Opening Hours</h3>
+                        <p>Mon - Fri: 10:00 am - 02:00 am</p>
+                        <p>Sat - Sun: 10:00 am - 03:00 am</p>
+                     </div>
+                  </div>
+                  <div class="contact__button">
+                     <a href="#" class="button">Visit Us</a>
+                  </div>
+                  @@include('html/blocks/_frame.htm',{
+                  "class": "contact__photo"
+                  })
+               </div>
+            </section>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body_decor-right",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

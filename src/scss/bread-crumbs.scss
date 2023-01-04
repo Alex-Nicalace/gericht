@@ -1,0 +1,38 @@
+// <bread-crumbs> =========================================================
+.bread-crumbs {
+   @extend %cuf;
+   font-weight: 700;
+   @include adaptiveValue("font-size", 23, 16);
+   line-height: 130%;
+   letter-spacing: 0.04em;
+   text-transform: capitalize;
+   font-feature-settings: "tnum" on, "lnum" on;
+   color: $colorTxtControl;
+   // .bread-crumbs__items
+   &__items {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   // .bread-crumbs__item
+   &__item {
+      text-align: left;
+      display: flex;
+      &:not(:last-child)::after {
+         @extend %ic;
+         align-self: center;
+         margin: 0 rem(8);
+         content: "\e904";
+         color: $colorTxtTitle;
+         font-size: rem(8);
+         transform: rotate(-90deg);
+      }
+      &:last-child {
+         a {
+            pointer-events: none;
+            cursor: default;
+         }
+      }
+   }
+}
+// </bread-crumbs> =========================================================

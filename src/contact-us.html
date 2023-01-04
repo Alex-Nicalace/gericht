@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Contact us"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="contact-us">
+         @@include('html/blocks/_offer.htm',{
+         "class": "contact-us__offer",
+         "page": "contact Us",
+         "header": "contact Us"
+         })
+         <div class="contact-us__body wave-bg wave-bg_lowered">
+            <section class="contact-us__map map">
+               <div data-decor class="map__container">
+                  <div class="map__wrapper">
+                     <iframe class="map__google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21833.25359788128!2d29.6235441!3d46.8406051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1668443793400!5m2!1sru!2s"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                     </iframe>
+                  </div>
+               </div>
+            </section>
+            <section data-bg class="contact-us__subscription subscription">
+               <div class="subscription__container">
+                  <form action="#" class="subscription__form form-subscription">
+                     <div class="form-subscription__name">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                     </div>
+                     <div class="form-subscription__email">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                     </div>
+                     <div class="form-subscription__massage">
+                        <textarea name="message" placeholder="Message"></textarea>
+                     </div>
+                     <div class="form-subscription__button">
+                        <input class="button" type="submit" value="Subscribe">
+                     </div>
+                  </form>
+                  @@include('html/blocks/_letter-above-picture.htm',{
+                  "class": "subscription__image"
+                  })
+               </div>
+            </section>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

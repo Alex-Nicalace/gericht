@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Our Services"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="our-services">
+         @@include('html/blocks/_offer.htm',{
+         "class": "our-services__offer",
+         "page": "Our Services",
+         "header": "What We offer"
+         })
+         <div class="bar-page__body wave-bg wave-bg_lowered">
+            <section class="our-services__quality quality">
+               <div data-decor class="quality__container">
+                  <div class="quality__header block-header">
+                     <div class="block-header__sub-title">Serving Quality</div>
+                     <h2 class="block-header__title">We at Gericth are serving our customers for over a decade.</h2>
+                  </div>
+                  <div class="quality__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices
+                     vulputate
+                     posuere tristique.
+                     In sed odio nec aliquet eu proin mauris et.
+                  </div>
+                  <div class="quality__buttons">
+                     <a href="#" class="button">Read More</a>
+                     <a href="#" class="button button_notfill">Contact Us</a>
+                  </div>
+               </div>
+            </section>
+            @@include('html/blocks/_l-menu.htm',{
+            "class": "our-services__l-menu",
+            "attribute": ""
+            })
+            @@include('html/blocks/_reserv.htm',{
+            "class": "our-services__reserv"
+            })
+            @@include('html/blocks/_hours.htm',{
+            "class": "our-services__hours",
+            "attribute": ""
+            })
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body_decor-right",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Blogs"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="blogs-page">
+         @@include('html/blocks/_offer.htm',{
+         "class": "blogs-page__offer",
+         "page": "Our Blogs- With sidebar",
+         "header": "Our Blogs"
+         })
+         <div class="blogs-page__body wave-bg wave-bg_lowered">
+            <div class="blogs-page__container">
+               <div data-decor class="blogs-page__wrapper">
+                  <div class="blogs-page__content">
+                     <div class="blogs-page__items items-blog">
+                        <!-- <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/01.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__body">
+                              <div class="item-blog__author autor-blog">
+                                 <time class="autor-blog__date" pubdate="2021-04-16">16 Apr 2021</time>
+                                 <div class="autor-blog__name">Annalisa L</div>
+                              </div>
+                              <a href="#" class="item-blog__title">
+                                 <h2>tips for prepping and caring for your grill</h2>
+                              </a>
+                              <div class="item-blog__text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                                 elit
+                                 elit scelerisque egestas mus
+                                 in.
+                              </div>
+                              <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                           </div>
+                        </article>
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/02.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__body">
+                              <div class="item-blog__author autor-blog">
+                                 <time class="autor-blog__date" pubdate="2021-05-23">23 May 2021</time>
+                                 <div class="autor-blog__name">John Micheal</div>
+                              </div>
+                              <a href="#" class="item-blog__title">
+                                 <h2>summer cocktails and mocktails</h2>
+                              </a>
+                              <div class="item-blog__text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                                 elit
+                                 elit scelerisque egestas mus
+                                 in.
+                              </div>
+                              <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                           </div>
+                        </article>
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/04.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__body">
+                              <div class="item-blog__author autor-blog">
+                                 <time class="autor-blog__date" pubdate="2020-03-06">06 Mar 2020</time>
+                                 <div class="autor-blog__name">Andrial M</div>
+                              </div>
+                              <a href="#" class="item-blog__title">
+                                 <h2>How to make your food Photographs look aesthetic</h2>
+                              </a>
+                              <div class="item-blog__text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                                 elit
+                                 elit scelerisque egestas mus
+                                 in.
+                              </div>
+                              <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                           </div>
+                        </article>
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/05.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__body">
+                              <div class="item-blog__author autor-blog">
+                                 <time class="autor-blog__date" pubdate="2018-06-17">17 June 2018</time>
+                                 <div class="autor-blog__name">Kaityln B</div>
+                              </div>
+                              <a href="#" class="item-blog__title">
+                                 <h2>Co-ordination & Teamwork Tips from a sous chef</h2>
+                              </a>
+                              <div class="item-blog__text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                                 elit
+                                 elit scelerisque egestas mus
+                                 in.
+                              </div>
+                              <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                           </div>
+                        </article> -->
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/01.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__author autor-blog">
+                              <time class="autor-blog__date" pubdate="2021-04-16">16 Apr 2021</time>
+                              <div class="autor-blog__name">Annalisa L</div>
+                           </div>
+                           <a href="#" class="item-blog__title">
+                              <h2>tips for prepping and caring for your grill</h2>
+                           </a>
+                           <div class="item-blog__text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                              elit
+                              elit scelerisque egestas mus
+                              in.
+                           </div>
+                           <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                        </article>
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/02.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__author autor-blog">
+                              <time class="autor-blog__date" pubdate="2021-05-23">23 May 2021</time>
+                              <div class="autor-blog__name">John Micheal</div>
+                           </div>
+                           <a href="#" class="item-blog__title">
+                              <h2>summer cocktails and mocktails</h2>
+                           </a>
+                           <div class="item-blog__text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                              elit
+                              elit scelerisque egestas mus
+                              in.
+                           </div>
+                           <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                        </article>
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/04.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__author autor-blog">
+                              <time class="autor-blog__date" pubdate="2020-03-06">06 Mar 2020</time>
+                              <div class="autor-blog__name">Andrial M</div>
+                           </div>
+                           <a href="#" class="item-blog__title">
+                              <h2>How to make your food Photographs look aesthetic</h2>
+                           </a>
+                           <div class="item-blog__text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                              elit
+                              elit scelerisque egestas mus
+                              in.
+                           </div>
+                           <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                        </article>
+                        <article class="items-blog__item item-blog">
+                           <div class="item-blog__image">
+                              <a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/05.jpg" alt="food"></a>
+                           </div>
+                           <div class="item-blog__author autor-blog">
+                              <time class="autor-blog__date" pubdate="2018-06-17">17 June 2018</time>
+                              <div class="autor-blog__name">Kaityln B</div>
+                           </div>
+                           <a href="#" class="item-blog__title">
+                              <h2>Co-ordination & Teamwork Tips from a sous chef</h2>
+                           </a>
+                           <div class="item-blog__text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+                              elit
+                              elit scelerisque egestas mus
+                              in.
+                           </div>
+                           <a href="#" class="item-blog__button button-not-bg">Read More</a>
+                        </article>
+                     </div>
+                     <div class="blogs-page__button">
+                        <a href="#" class="button">View More</a>
+                     </div>
+                  </div>
+                  @@include('html/blocks/_sidebar.htm',{
+                  "class": "blogs-page__sidebar"
+                  })
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

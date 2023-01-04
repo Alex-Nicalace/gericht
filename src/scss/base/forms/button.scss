@@ -1,0 +1,83 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: rem(8) rem(32);
+	@extend %cuf;
+	font-weight: 700;
+	line-height: 175%;
+	letter-spacing: 0.04em;
+	color: $colorTxtButton;
+	background-color: $colorBgButton;
+	transition: background-color 0.3s ease 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: darken($colorBgButton, 20%);
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+	&_notfill {
+		background-color: transparent;
+		color: $colorTxtControl;
+		border: 1px solid $colorBorderButton;
+	}
+}
+
+.button-not-bg {
+	@extend %cuf;
+	font-weight: 700;
+	line-height: 175%;
+	letter-spacing: 0.04em;
+	color: $colorBgButton;
+	@media (any-hover: hover) {
+		&:hover {
+			color: darken($colorBgButton, 20%);
+		}
+	}
+	&_dash {
+		display: inline-flex;
+		align-items: center;
+		&::before {
+			content: "";
+			width: rem(16);
+			height: rem(1);
+			background-color: $colorBgButton;
+			margin-right: rem(8);
+		}
+		@media (any-hover: hover) {
+			&:hover::before {
+				background-color: darken($colorBgButton, 20%);
+			}
+		}
+	}
+}
+
+.button-icon {
+	line-height: 1.75;
+	letter-spacing: 0.04em;
+	color: $colorTxtControl;
+
+	display: inline-flex;
+	align-items: center;
+	&::before {
+		content: "";
+		flex: 0 0 rem(25);
+		width: rem(25);
+		height: rem(25);
+		margin-right: rem(16);
+	}
+	&_comment {
+		&::before {
+			background: url("@img/common/message.svg") 0 0 no-repeat;
+		}
+	}
+	&_like {
+		&::before {
+			background: url("@img/common/heart.svg") 0 0 no-repeat;
+		}
+	}
+}

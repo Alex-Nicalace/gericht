@@ -1,0 +1,14 @@
+.socials {
+   display: flex;
+   font-size: rem(24);
+   margin: 0 rem(-8);
+   color: $colorTxtControl;
+   & > * {
+      margin: 0 rem(8);
+      @media (any-hover: hover) {
+         &:hover {
+            color: $colorTxtTitle;
+         }
+      }
+   }
+}

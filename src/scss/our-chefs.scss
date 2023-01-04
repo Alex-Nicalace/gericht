@@ -1,0 +1,126 @@
+.our-chefs {
+   // .our-chefs__team
+   &__team {
+      position: relative;
+   }
+   &__offer {
+      @include adaptiveValue("padding-top", 122, 70);
+   }
+}
+// <team>
+.team {
+   @include adaptiveValue("padding-top", 152, 30);
+   @include adaptiveValue("padding-bottom", 152, 30);
+   // .team__container
+   &__container {
+      position: relative;
+      &::before {
+         position: absolute;
+         right: rem(-200);
+         top: rem(480);
+         @media (max-width: $pc) {
+            display: none;
+         }
+      }
+      &::after {
+         position: absolute;
+         left: rem(-200);
+         bottom: rem(0);
+         @media (max-width: $pc) {
+            display: none;
+         }
+      }
+   }
+   // .team__items
+   &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: rem(-32) rem(-16);
+   }
+   // .team__item
+   &__item {
+      // max-width: rem(444);
+
+      padding: rem(32) rem(16);
+      flex: 1 1 33.33333%;
+      @media (max-width: $tablet) {
+         max-width: rem(250);
+         min-width: rem(280);
+      }
+   }
+}
+.item-team {
+   color: $colorTxtControl;
+   // .item-team__image-ibg
+   &__image {
+      position: relative;
+   }
+   &__links {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: percent(48, 520);
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      transition: all 0.3s ease 0s;
+      & > *:not(:last-child) {
+         margin-bottom: rem(16);
+      }
+      @media (any-hover: hover) {
+         .item-team:hover & {
+            visibility: visible;
+            opacity: 1;
+         }
+      }
+   }
+   // .item-team__image-ibg
+   &__image-ibg {
+      position: relative;
+      display: block;
+      padding-top: percent(520, 412);
+      border: 1px solid $colorBorderButton;
+      &:not(:last-child) {
+         margin-bottom: 32px;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         transition: all 0.3s ease 0s;
+         @media (any-hover: hover) {
+            .item-team:hover & {
+               background-color: rgb(12, 12, 12, 0.5);
+            }
+         }
+      }
+   }
+   // .item-team__name
+   &__name {
+      @extend %cuf;
+      font-weight: 600;
+      @include adaptiveValue("font-size", 45, 20);
+      line-height: 1.3;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+      @media (any-hover: hover) {
+         .item-team:hover & {
+            color: $colorTxtTitle;
+         }
+      }
+   }
+   // .item-team__position
+   &__position {
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+   }
+}
+// </team>

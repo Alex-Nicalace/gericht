@@ -1,0 +1,145 @@
+.chef-detail {
+   // .chef-detail__detail-chef
+   &__detail-chef {
+   }
+   // .chef-detail__achievement
+   &__achievement {
+   }
+   &__offer {
+      @include adaptiveValue("padding-top", 122, 70);
+   }
+}
+// <detail-chef>
+.detail-chef {
+   @include adaptiveValue("padding-top", 152, 30);
+   @include adaptiveValue("padding-bottom", 152, 30);
+   // .detail-chef__container
+   &__container {
+      display: grid;
+      position: relative;
+      // grid-template-columns: percent(634, 1300) 1fr;
+
+      &::before {
+         position: absolute;
+         right: rem(-50);
+         bottom: rem(-75);
+         @media (max-width: $pc) {
+            display: none;
+         }
+      }
+
+      @media (min-width: $mobile) {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: min-content 1fr;
+         column-gap: percent(32, 1300);
+         @include adaptiveValue("row-gap", 64, 15);
+      }
+      @media (max-width: $mobile) {
+         row-gap: rem(20);
+      }
+   }
+   &__image-wrapper {
+      @media (min-width: $mobile) {
+         grid-row: 1/3;
+      }
+      @media (max-width: $mobile) {
+         max-width: rem(500);
+         width: 100%;
+         margin: 0 auto;
+      }
+   }
+   // .detail-chef__image-ibg
+   &__image-ibg {
+      padding-top: percent(800, 634);
+   }
+   // .detail-chef__header
+   &__header {
+   }
+   // .detail-chef__body
+   &__body {
+      @media (min-width: $mobile) {
+         grid-column: 2/3;
+      }
+      & > *:not(:last-child) {
+         margin-bottom: percent(48, 634);
+      }
+   }
+   // .detail-chef__descr
+   &__descr {
+      font-style: italic;
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+   }
+   // .detail-chef__list
+   &__list {
+   }
+   // .detail-chef__item
+   &__item {
+      display: flex;
+      align-items: flex-start;
+      @extend %cuf;
+      font-weight: 600;
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: $colorTxtPagination;
+      &::before {
+         content: "";
+         flex: 0 0 rem(16);
+         height: 1px;
+         background-color: $colorBgButton;
+         margin-right: rem(8);
+         margin-top: 0.9375em;
+      }
+   }
+   // .detail-chef__sign-ibg
+   &__sign-ibg {
+      padding-top: percent(83, 634);
+      img {
+         object-fit: contain;
+         width: auto;
+      }
+   }
+}
+// </detail-chef>
+// <achievement>
+.achievement {
+   @include adaptiveValue("padding-top", 128, 30);
+   @include adaptiveValue("padding-bottom", 128, 30);
+   // .achievement__container
+   &__container {
+      position: relative;
+      z-index: 2;
+      /* display: grid;
+      grid-template-columns: repeat(2, calc(50% - percent(16, 1300)));
+      column-gap: percent(32, 1300); */
+   }
+   &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-right: percent(-32, 1300);
+      @include adaptiveValue("margin-top", -32, -16);
+      & > * {
+         margin-right: percent(32, 1332);
+         @include adaptiveValue("margin-top", 32, 16);
+         flex: 1 1 calc(50% - percent(32, 1332));
+      }
+
+      @media (max-width: $mobile) {
+         flex-direction: column;
+         align-items: stretch;
+         flex-wrap: nowrap;
+         // flex: auto;
+      }
+   }
+   // .achievement__recognition
+   &__recognition {
+   }
+   // .achievement__image-ibg
+   &__image-ibg {
+      padding-top: percent(454, 634);
+   }
+}
+// </achievement>

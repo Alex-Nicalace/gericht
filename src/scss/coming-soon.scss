@@ -1,0 +1,76 @@
+.coming-soon {
+   @include adaptiveValue("padding-top", 175 + 121, 100);
+   // .coming-soon__counter
+   &__counter {
+      // max-width: rem(916);
+      // margin: 0 auto;
+   }
+   // .coming-soon__container
+   &__container {
+      position: relative;
+      &[data-decor] {
+         &::before {
+            position: absolute;
+            right: rem(-100);
+            top: rem(-50);
+            z-index: 5;
+            @media (max-width: $pc) {
+               display: none;
+            }
+         }
+      }
+      & > *:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 40, 20);
+      }
+   }
+   // .coming-soon__header
+   &__header {
+   }
+   // .coming-soon__text
+   &__text {
+      line-height: 1.75;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: $colorTxtControl;
+      max-width: rem(741);
+      margin: 0 auto;
+   }
+   // .coming-soon__button
+   &__button {
+      text-align: center;
+   }
+}
+.counter {
+   $fontSize: 64;
+   margin: 0 percent(-70, 1300);
+
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   // .counter__item
+   &__item {
+      margin: 0 percent(70, 1440);
+
+      @extend %cuf;
+      line-height: 1.3;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      @include adaptiveValue("font-size", $fontSize, 45);
+      text-align: center;
+   }
+   // .counter__number
+   &__number {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: $colorTxtPagination;
+      &:not(:last-child) {
+         margin-bottom: rem(8);
+      }
+   }
+   // .counter__name
+   &__name {
+      font-weight: 700;
+      font-size: em(23, $fontSize);
+      letter-spacing: 0.04em;
+   }
+}

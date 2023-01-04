@@ -1,0 +1,50 @@
+// <offer> ================================================
+.offer {
+   &__body {
+      position: relative;
+   }
+   // .offer__slider
+   &__slider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+   // .offer__wrapper
+   &__wrapper {
+   }
+   // .offer__slide
+   &__slide {
+   }
+   // .offer__image-ibg
+   &__image-ibg {
+      height: 100%;
+   }
+   // .offer__content
+   &__content {
+      position: relative;
+   }
+   // .offer__container
+   &__container {
+      @include adaptiveValue("padding-top", 254, 60);
+      @include adaptiveValue("padding-bottom", 254, 60);
+      display: grid;
+      @include adaptiveValue("row-gap", 24, 10);
+      text-align: center;
+   }
+   // .offer__header
+   &__header {
+      @extend %cuf;
+      font-weight: 700;
+      @include adaptiveValue("font-size", 90, 43);
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      color: $colorTxtTitle;
+   }
+   // .offer__breadcrumb
+   &__breadcrumb {
+   }
+}
+// </offer> ================================================

@@ -1,0 +1,76 @@
+.faq {
+   &__offer {
+      @include adaptiveValue("padding-top", 122, 70);
+   }
+   // .faq__body
+   &__body {
+   }
+   // .faq__questions
+   &__questions {
+      position: relative;
+   }
+}
+.questions {
+   @include adaptiveValue("padding-top", 152, 30);
+   // .questions__container
+   &__container {
+      display: grid;
+      $column-gap: percent(32, 1300);
+      grid-template-columns: repeat(auto-fill, minmax(rem(290), math.div(100% - $column-gap, 2)));
+      justify-content: center;
+      gap: rem(16) $column-gap;
+   }
+   // .questions__image
+   &__image {
+      align-self: start;
+      .frame__image-ibg {
+         padding-top: percent(600, 586);
+      }
+   }
+   // .questions__list
+   &__list {
+   }
+   // .questions__item
+   &__item {
+      background-color: $colorBgSideBar;
+      padding: rem(24);
+      &:not(:last-child) {
+         margin-bottom: rem(16);
+      }
+   }
+}
+.question-block {
+   letter-spacing: 0.04em;
+   // .question-block__question
+   &__question {
+      list-style: none; // samsung not hide
+      list-style-type: none; // samsung not hide
+      &::marker,
+      &::-webkit-details-marker {
+         display: none; // samsung not hide
+         font-size: 0; // samsung not hide
+      }
+
+      cursor: pointer;
+
+      @extend %cuf;
+      font-weight: 700;
+      font-size: rem(23);
+      line-height: 1.3;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: $colorTxtControl;
+
+      transition: all 0.3s ease 0s;
+
+      .question-block[open] & {
+         color: #dcca87;
+      }
+   }
+   // .question-block__answer
+   &__answer {
+      padding-top: rem(16);
+      line-height: 1.75;
+      animation: sweep-r 1s linear;
+   }
+}

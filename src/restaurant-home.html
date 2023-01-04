@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Gerícht"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="mainpage">
+			<section data-fullscreen class="mainpage__slider mainslider">
+				<div class="mainslider__container mainslider__container_wide">
+					<div class="mainslider__container">
+						<nav class="mainslider__menu menu-mainslider">
+							<a href="restaurant-home.html"
+								class="menu-mainslider__link menu-mainslider__link_selected">#Gericht</a>
+							<a href="bar-home.html" class="menu-mainslider__link">#Bar</a>
+						</nav>
+						<div class="body-main-slider swiper">
+							<div class="body-main-slider__swiper swiper-wrapper">
+								<div class="body-main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__content">
+										<div class="slide-main-slider__header block-header block-header_big block-header_left">
+											<div class="block-header__sub-title">Chase the new Flavour</div>
+											<h2 class="block-header__title">The key to Fine dining</h2>
+										</div>
+										<div class="slide-main-slider__text">Sit tellus lobortis sed senectus vivamus molestie.
+											Condimentum volutpat morbi facilisis quam scelerisque sapien. Et,
+											penatibus aliquam amet tellus</div>
+										<a href="#" class="slide-main-slider__button button">Explorer Menu</a>
+									</div>
+									<a href="#" class="slide-main-slider__image-ibg">
+										<img class="swiper-lazy" data-src="@img/mainpage/mainslider/01.jpg" alt="Picture of eat">
+									</a>
+								</div>
+								<div class="body-main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__content">
+										<div class="slide-main-slider__header block-header block-header_big block-header_left">
+											<div class="block-header__sub-title">Chase the new Flavour</div>
+											<h2 class="block-header__title">The key to Fine dining</h2>
+										</div>
+										<div class="slide-main-slider__text">Sit tellus lobortis sed senectus vivamus molestie.
+											Condimentum volutpat morbi facilisis quam scelerisque sapien. Et,
+											penatibus aliquam amet tellus</div>
+										<a href="#" class="slide-main-slider__button button">Explorer Menu</a>
+									</div>
+									<a href="#" class="slide-main-slider__image-ibg">
+										<img class="swiper-lazy" data-src="@img/mainpage/mainslider/02.jpg" alt="Picture of eat">
+									</a>
+								</div>
+								<div class="body-main-slider__slide slide-main-slider swiper-slide">
+									<div class="slide-main-slider__content">
+										<div class="slide-main-slider__header block-header block-header_big block-header_left">
+											<div class="block-header__sub-title">Chase the new Flavour</div>
+											<h2 class="block-header__title">The key to Fine dining</h2>
+										</div>
+										<div class="slide-main-slider__text">Sit tellus lobortis sed senectus vivamus molestie.
+											Condimentum volutpat morbi facilisis quam scelerisque sapien. Et,
+											penatibus aliquam amet tellus</div>
+										<a href="#" class="slide-main-slider__button button">Explorer Menu</a>
+									</div>
+									<a href="#" class="slide-main-slider__image-ibg">
+										<img class="swiper-lazy" data-src="@img/mainpage/mainslider/03.jpg" alt="Picture of eat">
+									</a>
+								</div>
+							</div>
+							<div class="body-main-slider__controll bullets-pagination swiper-pagination"></div>
+						</div>
+					</div>
+					<button data-da=".body-main-slider,1445,last" type="button"
+						class="mainslider__scroll scroll">Scroll</button>
+				</div>
+			</section>
+			<div class="mainpage__body wave-bg">
+				<section data-bg class="mainpage__about about-section">
+					<div class="about-section__container">
+						<div class="about-section__content">
+							<h3 class="about-section__title">About Us</h3>
+							<div class="about-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+								pharetra adipiscing ultrices vulputate posuere tristique.
+								In sed odio nec aliquet eu proin mauris et</div>
+							<a href="about-us.html" class="about-section__button button">Know More</a>
+						</div>
+						<div class="about-section__knife">
+							<img src="@img/about/knife.png" alt="knife">
+						</div>
+						<div class="about-section__content">
+							<h3 class="about-section__title">Our History</h3>
+							<div class="about-section__text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
+								Risus placerat morbi volutpat habitasse interdum mi
+								aliquam In sed odio nec aliquet.</div>
+							<a href="about-us.html" class="about-section__button button">Know More</a>
+						</div>
+					</div>
+				</section>
+				@@include('html/blocks/_reserv.htm',{
+				"class": "mainpage__reserv"
+				})
+				@@include('html/blocks/_l-menu.htm',{
+				"class": "mainpage__l-menu",
+				"attribute": "data-decor"
+				})
+				@@include('html/blocks/_today.htm',{
+				"class": "mainpage__today",
+				"attribute": ""
+				})
+				@@include('html/blocks/_chefs.htm',{
+				"class": "mainpage__chef",
+				"attribute": ""
+				})
+				@@include('html/blocks/_testimony.htm',{
+				"class": "mainpage__testimony",
+				"attribute": ""
+				})
+				@@include('html/blocks/_video-module.htm',{
+				"class": "mainpage__video-module",
+				"attribute": ""
+				})
+				@@include('html/blocks/_awards.htm',{
+				"class": "mainpage__awards",
+				"attribute": "data-bg"
+				})
+				<section class="mainpage__blogs blogs">
+					<div data-decor class="blogs__container">
+						<div class="blogs__header block-header">
+							<div class="block-header__sub-title">Blogs</div>
+							<h2 class="block-header__title">Gerícht updates</h2>
+						</div>
+						<div class="blogs__items items-blog">
+							<article class="items-blog__item item-blog">
+								<div class="item-blog__image">
+									<a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/01.jpg" alt="food"></a>
+								</div>
+								<div class="item-blog__body">
+									<div class="item-blog__author autor-blog">
+										<time class="autor-blog__date" pubdate="2021-04-16">16 Apr 2021</time>
+										<div class="autor-blog__name">Annalisa L</div>
+									</div>
+									<a href="#" class="item-blog__title">
+										<h3>tips for prepping and caring for your grill</h3>
+									</a>
+									<div class="item-blog__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit
+										elit scelerisque egestas mus
+										in.
+									</div>
+									<a href="#" class="item-blog__button button-not-bg">Read More</a>
+								</div>
+							</article>
+							<article class="items-blog__item item-blog">
+								<div class="item-blog__image">
+									<a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/02.jpg" alt="food"></a>
+								</div>
+								<div class="item-blog__body">
+									<div class="item-blog__author autor-blog">
+										<time class="autor-blog__date" pubdate="2021-05-23">23 May 2021</time>
+										<div class="autor-blog__name">John Micheal</div>
+									</div>
+									<a href="#" class="item-blog__title">
+										<h3>summer cocktails and mocktails</h3>
+									</a>
+									<div class="item-blog__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit
+										elit scelerisque egestas mus
+										in.
+									</div>
+									<a href="#" class="item-blog__button button-not-bg">Read More</a>
+								</div>
+							</article>
+							<article class="items-blog__item item-blog">
+								<div class="item-blog__image">
+									<a href="#" class="item-blog__image-ibg"><img data-src="@img/blogs/03.jpg" alt="food"></a>
+								</div>
+								<div class="item-blog__body">
+									<div class="item-blog__author autor-blog">
+										<time class="autor-blog__date" pubdate="2021-08-06">06 Aug 2021</time>
+										<div class="autor-blog__name">Fred W</div>
+									</div>
+									<a href="#" class="item-blog__title">
+										<h3>easy cooking for college students</h3>
+									</a>
+									<div class="item-blog__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit
+										elit scelerisque egestas mus
+										in.
+									</div>
+									<a href="#" class="item-blog__button button-not-bg">Read More</a>
+								</div>
+							</article>
+						</div>
+						<div class="blogs__button">
+							<a href="#" class="button">View More</a>
+						</div>
+					</div>
+				</section>
+				@@include('html/blocks/_gallary.htm',{
+				"class": "mainpage__gallary",
+				"attribute": ""
+				})
+			</div>
+		</main>
+		@@include('html/_footer.htm',{
+		"class": "footer-body_mt",
+		"attribute": "data-decor"
+		})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.page-404 {
+   @include adaptiveValue("padding-top", 209 + 121, 100);
+   // .page-404__container
+   &__container {
+      text-align: center;
+      & > *:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 32, 16);
+      }
+   }
+   &__image {
+      &::after {
+         margin-top: rem(16);
+         display: block;
+         @extend %ic;
+         content: "\e905";
+         font-size: rem(19);
+      }
+   }
+   // .page-404__image-ibg
+   &__image-ibg {
+      padding-top: percent(190, 1300);
+      img {
+         object-fit: contain;
+      }
+   }
+   // .page-404__text
+   &__text {
+      max-width: rem(610);
+      margin: 0 auto;
+      @extend %cuf;
+      font-weight: 700;
+      @include adaptiveValue("font-size", 23, 16);
+      line-height: 1.3;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: $colorTxtControl;
+   }
+   // .page-404__button
+   &__button {
+   }
+}

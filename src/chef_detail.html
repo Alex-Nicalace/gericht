@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Chef Detail"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="chef-detail">
+         @@include('html/blocks/_offer.htm',{
+         "class": "chef-detail__offer",
+         "page": "Chef Details",
+         "header": "Our Chefs"
+         })
+         <div class="chef-detail__body wave-bg wave-bg_lowered">
+            <section class="chef-detail__detail-chef detail-chef">
+               <div data-decor class="detail-chef__container">
+                  <div class="detail-chef__header block-header block-header_left">
+                     <div class="block-header__sub-title">Deputy Chef</div>
+                     <h2 class="block-header__title">Patrick Choi</h2>
+                  </div>
+                  <div class="detail-chef__image-wrapper">
+                     <div class="detail-chef__image-ibg"><img data-src="@img/chef-detail/chef-info/photo-chef.jpg"
+                           alt="photo chef"></div>
+                  </div>
+                  <div class="detail-chef__body">
+                     <div class="detail-chef__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. Auctor sit iaculis in arcu.
+                        Vulputate nulla lobortis
+                        mauris eget sit. Nulla scelerisque scelerisque consectetur adipiscing elit.
+                     </div>
+                     <ul class="detail-chef__list">
+                        <li class="detail-chef__item">Graduated from Culinary Institute of New Jersey, USA.</li>
+                        <li class="detail-chef__item">Worked as a junior chef at ruso’s Italiano.</li>
+                        <li class="detail-chef__item">Contributed 20+ new recipes on International platform.</li>
+                        <li class="detail-chef__item">Trained under renowned Chef Gusteau Marcellini</li>
+                     </ul>
+                     <div class="detail-chef__sign-ibg"><img data-src="@img/chef-detail/chef-info/sign.png"
+                           alt="chef sign"></div>
+                  </div>
+               </div>
+            </section>
+            <section data-bg class="chef-detail__achievement achievement">
+               <div class="achievement__container">
+                  <div class="achievement__wrapper">
+                     <div class="achievement__recognition recognition">
+                        <div class="recognition__header block-header block-header_left">
+                           <div class="block-header__sub-title">Deputy Chef</div>
+                           <h2 class="block-header__title">Personal Achievements</h2>
+                        </div>
+                        <div class="recognition__items">
+                           <div class="recognition__item">
+                              <div class="recognition__point">
+                                 <div class="recognition__image-ibg"><img data-src="@img/common/stars/01.svg"
+                                       alt="point">
+                                 </div>
+                              </div>
+                              <div class="recognition__body">
+                                 <div class="recognition__title">Rising Star</div>
+                                 <div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+                              </div>
+                           </div>
+                           <div class="recognition__item">
+                              <div class="recognition__point">
+                                 <div class="recognition__image-ibg"><img data-src="@img/common/stars/03.svg"
+                                       alt="point">
+                                 </div>
+                              </div>
+                              <div class="recognition__body">
+                                 <div class="recognition__title">Outstanding Chef</div>
+                                 <div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+                              </div>
+                           </div>
+                           <div class="recognition__item">
+                              <div class="recognition__point">
+                                 <div class="recognition__image-ibg"><img data-src="@img/common/stars/03.svg"
+                                       alt="point">
+                                 </div>
+                              </div>
+                              <div class="recognition__body">
+                                 <div class="recognition__title">Outstanding Chef</div>
+                                 <div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+                              </div>
+                           </div>
+                           <div class="recognition__item">
+                              <div class="recognition__point">
+                                 <div class="recognition__image-ibg"><img data-src="@img/common/stars/01.svg"
+                                       alt="point">
+                                 </div>
+                              </div>
+                              <div class="recognition__body">
+                                 <div class="recognition__title">Rising Star</div>
+                                 <div class="recognition__text">Lorem ipsum dolor sit amet, consectetur.</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="achievement__image">
+                        <div class="achievement__image-ibg"><img data-src="@img/chef-detail/achievement/01.jpg"
+                              alt="meal">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{
+      "class": "footer-body",
+      "attribute": "data-decor"
+      })
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

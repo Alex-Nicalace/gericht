@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Gerícht"
+})
+
+<body>
+   <div class="wrapper wave-bg wave-bg_lifted" data-bg>
+      @@include('html/_header.htm',{})
+      <main class="coming-soon">
+         <section class="coming-soon__counter">
+            <div data-decor class="coming-soon__container">
+               <div
+                  class="coming-soon__header block-header block-header_reverse block-header_big block-header_spoon-big">
+                  <h1 class="block-header__title">Coming Soon</h1>
+               </div>
+               <p class="coming-soon__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique feugiat orci tristique bibendum
+                  sollicitudin at
+                  aliquam. Nulla varius augue eu orci vel.
+               </p>
+               <div class="coming-soon__counter">
+                  <div class="counter">
+                     <div class="counter__item" data-monts>
+                        <div class="counter__number">12</div>
+                        <div class="counter__name">Months</div>
+                     </div>
+                     <div class="counter__item" data-days>
+                        <div class="counter__number">32</div>
+                        <div class="counter__name">Days</div>
+                     </div>
+                     <div class="counter__item" data-hours>
+                        <div class="counter__number">11</div>
+                        <div class="counter__name">Hours</div>
+                     </div>
+                     <div class="counter__item" data-minutes>
+                        <div class="counter__number">52</div>
+                        <div class="counter__name">Minutes</div>
+                     </div>
+                     <div class="counter__item" data-seconds>
+                        <div class="counter__number">34</div>
+                        <div class="counter__name">Seconds</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="coming-soon__button">
+                  <a href="restaurant-home.html" class="button">Back To Home</a>
+               </div>
+            </div>
+
+         </section>
+      </main>
+      <footer data-decor class="footer footer_simple">
+         <div class="footer__rights">2021 Gerícht. All Rights reserved.</div>
+      </footer>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

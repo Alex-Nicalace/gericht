@@ -1,0 +1,86 @@
+.our-services {
+   // .our-services__offer
+   &__offer {
+      @include adaptiveValue("padding-top", 122, 70);
+   }
+   // .our-services__quality
+   &__quality {
+   }
+   // .bar-page__hours
+   &__hours {
+      position: relative;
+   }
+   &__reserv {
+      .reserv {
+         &__container {
+            &::before {
+               right: auto;
+               top: auto;
+               left: rem(-140);
+               bottom: rem(-70);
+               @media (max-width: $pc) {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+}
+
+// <quality> ========================================================
+.quality {
+   @include adaptiveValue("padding-top", 196, 30);
+   @include adaptiveValue("padding-bottom", 152, 30);
+   text-align: center;
+   // .quality__container
+   &__container {
+      position: relative;
+      max-width: rem(1128);
+      & > *:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 40, 20);
+      }
+      &[data-decor] {
+         &::before {
+            position: absolute;
+            right: rem(-150);
+            bottom: rem(-120);
+            @media (max-width: $pc) {
+               display: none;
+            }
+         }
+      }
+   }
+   // .quality__header
+   &__header {
+      h2 {
+         letter-spacing: 0.03em;
+      }
+   }
+   // .quality__text
+   &__text {
+      max-width: rem(868);
+      margin-left: auto;
+      margin-right: auto;
+
+      line-height: 175%;
+      text-align: center;
+      letter-spacing: 0.04em;
+   }
+   // .quality__buttons
+   &__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @include adaptiveValue("margin", -20, -5);
+      & > * {
+         @include adaptiveValue("margin", 20, 5);
+      }
+   }
+}
+.button {
+   // .button_notfill
+   &_notfill {
+   }
+}
+
+// </quality> ========================================================

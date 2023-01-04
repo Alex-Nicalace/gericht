@@ -1,0 +1,134 @@
+.list-comment {
+   //.list-comment__header
+   &__header {
+      @extend %cuf;
+      @include adaptiveValue("font-size", 32, 25);
+      line-height: 1.3;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: $colorTxtTitle;
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 32, 15);
+      }
+   }
+   // .list-comment__items
+   &__items {
+      .list-comment__items {
+         // margin-left: rem(121);
+      }
+   }
+   // .list-comment__item
+   &__item {
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 32, 15);
+      }
+      & > *:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 16, 10);
+      }
+      .list-comment__item {
+         & > * {
+            padding-left: percent(121, 967);
+         }
+      }
+   }
+}
+
+.comment {
+   $photo-mr: 24;
+   padding: rem(16) percent(32, 967) rem(16) percent(22, 967);
+   display: grid;
+   grid-template-columns: rem(150 + $photo-mr) 1fr min-content;
+   grid-template-areas:
+      "p a r"
+      "p d ."
+      "p m .";
+   // gap: rem(8) rem(24);
+   row-gap: rem(8);
+   grid-template-rows: repeat(2, min-content) 1fr;
+
+   background-color: #2424241a;
+   line-height: 1.75;
+   @media (max-width: $tablet) {
+      grid-template-columns: vw(150 + $photo-mr, 992) 1fr min-content;
+   }
+   // .comment__author
+   &__author {
+      grid-area: a;
+
+      @extend %cuf;
+      font-weight: 700;
+      font-size: rem(23);
+      line-height: 1.3;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: $colorTxtControl;
+   }
+   // .comment__photo
+   &__photo {
+      grid-area: p;
+
+      margin-right: rem($photo-mr);
+   }
+   // .comment__photo-ibg
+   &__photo-ibg {
+      padding-top: 100%;
+   }
+   // .comment__date
+   &__date {
+      grid-area: d;
+   }
+   // .comment__message
+   &__message {
+      grid-area: m;
+      max-width: rem(635);
+   }
+   // .comment__reply
+   &__reply {
+      grid-area: r;
+   }
+   &__form-reply {
+      // grid-area: f;
+      grid-row: 4;
+      grid-column: 2;
+
+      max-width: rem(635);
+   }
+}
+
+.form-reply {
+   & > *:not(:last-child) {
+      margin-bottom: rem(16);
+   }
+   // .form-reply__head
+   &__head {
+      & > *:not(:last-child) {
+         margin-right: rem(32);
+      }
+   }
+   // .form-reply__title
+   &__title {
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+      color: $colorTxtControl;
+   }
+   // .form-reply__cancel-button
+   &__cancel-button {
+   }
+   // .form-reply__message
+   &__message {
+      min-height: rem(140);
+      position: relative;
+      textarea {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+      }
+   }
+   // .form-reply__submit
+   &__submit {
+   }
+}
